@@ -184,3 +184,42 @@ ORDER BY last_name;
 SELECT * FROM customer
 WHERE first_name LIKE'A%' AND last_name NOT LIKE'B%'
 ORDER BY last_name;
+
+#GENERAL CHALLENGE 
+
+#CHALLENGE 1
+SELECT * FROM payment;
+
+SELECT COUNT (amount) FROM payment
+WHERE amount >5.00;
+
+#CHALLENGE 2
+SELECT * FROM actor;
+
+SELECT COUNT (first_name) FROM actor
+WHERE first_name LIKE('P%');
+
+#CHALLENGE 3
+SELECT * FROM address;
+
+SELECT COUNT (DISTINCT(district))
+FROM address;
+
+#CHALLENGE 4
+
+SELECT DISTINCT(district)
+FROM address;
+
+# CHALLENGE 5
+
+SELECT * FROM film;
+
+SELECT COUNT(rating) FROM film
+WHERE RATING ='R' 
+AND replacement_cost BETWEEN 5 AND 15;
+
+#CHALLENGE 6
+SELECT * FROM film;
+
+SELECT COUNT(title) FROM film
+WHERE title LIKE'%truman%';
